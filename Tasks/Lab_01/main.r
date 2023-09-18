@@ -7,7 +7,7 @@ task_2 <- function() {
 }
 
 task_5 <- function() {
-    season <- c("winter", "winter", "spring", "spring", "spring", "summer", "summer", "summer", "autumn", "autumn", "autumn", "winter")
+    season <- c(rep("winter",2), rep("spring",3), rep("summer",3), rep("autumn",3), "winter")
     return(season)
 }
 
@@ -20,4 +20,4 @@ task_8 <- function() {
     return(powers_of_two)
 }
 
-task_8()
+print(task_8())
