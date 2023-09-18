@@ -56,5 +56,11 @@ task_11 <- function() {
     return(task_9()[2,3])
 }
 
+task_14 <- function() {
+    season <- task_5()
+    season_f <- factor(season, levels = c("winter", "spring", "summer", "autumn"))
+    levels(season_f) <- c("wi", "sp", "su", "au")
+    return(season_f)
+}
 
-print(task_11())
+print(task_14())
