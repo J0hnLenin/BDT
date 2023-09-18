@@ -21,6 +21,7 @@ task_4 <- function() {
 }
 
 task_5 <- function() {
+
   season <- c(rep("winter",2), rep("spring",3), rep("summer",3), rep("autumn",3), "winter")
   return(season)
 }
@@ -36,14 +37,15 @@ task_7 <- function() {
 }
 
 task_8 <- function() {
-  powers_of_two <- c()
-  for(i in 1:5) {
-    powers_of_two <- c(powers_of_two, 2^i)
-  }
-  return(powers_of_two)
+    powers_of_two <- c()
+    for(i in 1:5) {
+        powers_of_two <- c(powers_of_two, 2^i)
+    }
+    return(powers_of_two)
 }
 
-task_9 <- function() {
+task_9 <- function(){
+
   month <- task_6()
   calendar <- matrix(month, byrow = TRUE, nrow = 4, ncol = 3)  
   return(calendar)
