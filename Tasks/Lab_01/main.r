@@ -47,14 +47,14 @@ task_8 <- function() {
 
 task_9 <- function(){
   month <- task_6()
-  calendar <- matrix(month, nrow = 3, ncol = 4)  
+  calendar <- matrix(month, byrow = TRUE, nrow = 4, ncol = 3)  
   return(calendar)
 
 }
 
 task_11 <- function() {
-    
+    return(task_9()[2,3])
 }
 
 
-print(task_8())
+print(task_11())
