@@ -49,7 +49,6 @@ task_9 <- function(){
   month <- task_6()
   calendar <- matrix(month, byrow = TRUE, nrow = 4, ncol = 3)  
   return(calendar)
-
 }
 
 task_10 <- function(){
@@ -67,10 +66,10 @@ task_13 <- function() {
 }
 
 task_14 <- function() {
-    season <- task_5()
-    season_f <- factor(season, levels = c("winter", "spring", "summer", "autumn"))
-    levels(season_f) <- c("wi", "sp", "su", "au")
-    return(season_f)
+  season <- task_5()
+  season_f <- factor(season, levels = c("winter", "spring", "summer", "autumn"))
+  levels(season_f) <- c("wi", "sp", "su", "au")
+  return(season_f)
 }
 
 task_15 <- function() {
