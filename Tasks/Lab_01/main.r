@@ -1,4 +1,11 @@
 
+task_1 <- function() {
+  width <- 2
+  len <- width + 7
+  per <- len + len + width + width
+  return(per)
+}
+
 task_2 <- function() {
     side_1 <- 3
     side_2 <- 5
@@ -6,10 +13,28 @@ task_2 <- function() {
     return(len)
 }
 
+task_4 <- function() {
+  return(c(-3, -2, -1))
+}
+
 task_5 <- function() {
     season <- c(rep("winter",2), rep("spring",3), rep("summer",3), rep("autumn",3), "winter")
     return(season)
 }
+
+
+task_6 <- function() {
+  month <- c("January", "February", "March", "April", "May", "June", "JUly", "August", "September", "October", "November", "December")
+  return(month)
+}
+
+task_7 <- function() {
+  month <- task_6()
+  return(c(month[0:3], month[6:9]))
+}
+
+
+
 
 
 task_8 <- function() {
@@ -19,5 +44,13 @@ task_8 <- function() {
     }
     return(powers_of_two)
 }
+
+task_9 <- function(){
+  month <- task_6()
+  calendar <- matrix(month, nrow = 3, ncol = 4)  
+  return(calendar)
+
+}
+
 
 print(task_8())
