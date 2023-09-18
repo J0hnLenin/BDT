@@ -21,7 +21,7 @@ task_7 <- function() {
 
 task_9 <- function(){
   month <- task_6()
-  calendar <- matrix(month, nrow = 3, ncol = 4)  
+  calendar <- matrix(month, byrow = TRUE, nrow = 4, ncol = 3)  
   return(calendar)
 
 }
