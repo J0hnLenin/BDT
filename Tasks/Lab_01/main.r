@@ -1,4 +1,3 @@
-
 task_1 <- function() {
   width <- 2
   len <- width + 7
@@ -7,10 +6,14 @@ task_1 <- function() {
 }
 
 task_2 <- function() {
-    side_1 <- 3
-    side_2 <- 5
-    len <- side_1 * side_2
-    return(len)
+  side_1 <- 3
+  side_2 <- 5
+  len <- side_1 * side_2
+  return(len)
+}
+
+task_3 <- function () {
+  print(root<- 27^(1/3))
 }
 
 task_4 <- function() {
@@ -18,10 +21,10 @@ task_4 <- function() {
 }
 
 task_5 <- function() {
-    season <- c(rep("winter",2), rep("spring",3), rep("summer",3), rep("autumn",3), "winter")
-    return(season)
-}
 
+  season <- c(rep("winter",2), rep("spring",3), rep("summer",3), rep("autumn",3), "winter")
+  return(season)
+}
 
 task_6 <- function() {
   month <- c("January", "February", "March", "April", "May", "June", "JUly", "August", "September", "October", "November", "December")
@@ -33,10 +36,6 @@ task_7 <- function() {
   return(c(month[0:3], month[6:9]))
 }
 
-
-
-
-
 task_8 <- function() {
     powers_of_two <- c()
     for(i in 1:5) {
@@ -46,14 +45,25 @@ task_8 <- function() {
 }
 
 task_9 <- function(){
+
   month <- task_6()
   calendar <- matrix(month, byrow = TRUE, nrow = 4, ncol = 3)  
   return(calendar)
 
 }
 
+task_10 <- function(){
+  calendar <- task_9()
+  return(calendar[3,])
+}
+
 task_11 <- function() {
-    return(task_9()[2,3])
+  return(task_9()[2,3])
+}
+
+task_13 <- function() {
+  season_f <- factor(task_5(), levels = c("winter", "spring", "summer", "autumn"))
+  return(season_f)
 }
 
 task_14 <- function() {
@@ -64,9 +74,9 @@ task_14 <- function() {
 }
 
 task_15 <- function() {
-    season <- task_5()
-    season_log <- season != "winter"
-    return()(season_log)
+  season <- task_5()
+  season <- season != "winter"
+  return(season)
 }
 
-task_15()
+print(task_15())
