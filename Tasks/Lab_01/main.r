@@ -63,4 +63,10 @@ task_14 <- function() {
     return(season_f)
 }
 
-print(task_14())
+task_15 <- function() {
+    season <- task_5()
+    season_log <- season != "winter"
+    return()(season_log)
+}
+
+task_15()
